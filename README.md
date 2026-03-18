@@ -1,78 +1,60 @@
 # Credit Card Fraud Detection
 
-## Overview
-This project focuses on detecting fraudulent credit card transactions using machine learning techniques.
+## About the Project
+In this project, I worked on detecting fraudulent credit card transactions using machine learning.
 
-This is my first end-to-end machine learning project, where I applied data analysis, preprocessing, and model evaluation techniques on a real-world dataset.
+This is my first end-to-end machine learning project where I went through the full process from data analysis to model evaluation.
 
 ---
 
 ## Dataset
-The dataset is from Kaggle and contains anonymized credit card transactions.
+The dataset comes from Kaggle and contains anonymized credit card transactions.
 
-It is highly imbalanced, with a very small percentage of fraud cases compared to normal transactions.
+It is highly imbalanced, meaning fraud cases are very rare compared to normal transactions.
 
-Dataset is not included in this repository due to size.
-
----
-
-## Problem
-Detect fraudulent transactions in a highly imbalanced dataset.
-
-This is a challenging problem because traditional metrics like accuracy can be misleading.
+(The dataset is not included due to its size.)
 
 ---
 
-## Approach
-- Exploratory Data Analysis (EDA)
-- Data preprocessing and feature scaling
-- Handling imbalanced data using class weights
-- Model training and evaluation
-- Model comparison
+## What I Did
+- Explored the dataset (EDA)
+- Checked class imbalance
+- Scaled features (Time, Amount)
+- Split data into train and test sets
+- Built classification models
+- Compared model performance
 
 ---
 
-## Models Used
+## Models
 - Logistic Regression
 - Random Forest
 
 ---
 
-## Evaluation Metrics
-- Precision
-- Recall
-- F1 Score
-- ROC-AUC
-
-Accuracy was not considered sufficient due to class imbalance.
-
----
-
 ## Results
-
-### Logistic Regression
-- High recall
+Logistic Regression:
+- Very high recall
 - Very low precision
-- Detects most fraud cases but produces many false positives
+- Catches most fraud cases but gives many false alarms
 
-### Random Forest
+Random Forest:
 - High precision
 - Lower recall
-- Produces fewer false positives but misses some fraud cases
+- Fewer false alarms but misses some fraud cases
 
 ---
 
-## Conclusion
+## Key Takeaway
 There is a trade-off between precision and recall in fraud detection.
 
-- Logistic Regression is better when the goal is to detect as many fraud cases as possible.
-- Random Forest is better when the goal is to reduce false alarms.
-
-The choice of model depends on the business objective.
+Depending on the goal:
+- Use Logistic Regression to catch more fraud
+- Use Random Forest to reduce false positives
 
 ---
 
-## Technologies
+## Tools Used
 - Python
 - Pandas
 - NumPy
@@ -81,8 +63,7 @@ The choice of model depends on the business objective.
 
 ---
 
-## Future Improvements
-- Apply SMOTE for better handling of imbalanced data
-- Try advanced models like XGBoost
-- Perform hyperparameter tuning
-- Optimize classification threshold
+## Next Steps
+- Try SMOTE
+- Test more models (XGBoost)
+- Improve model tuning
