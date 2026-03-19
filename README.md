@@ -10,6 +10,8 @@ The dataset contains transactions made by credit cards. Most of the transactions
 
 This imbalance makes the problem more challenging and requires careful evaluation of models.
 
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
 ## What I Did
 
 * Explored the dataset (EDA)
@@ -35,11 +37,6 @@ This imbalance makes the problem more challenging and requires careful evaluatio
 * Random Forest provided a better balance between precision and recall
 * Choosing the right metric depends on the problem (e.g. fraud detection vs false alarms)
 
-## How to Run
-
-1. Download the dataset (link or Kaggle reference)
-2. Open the notebook
-3. Run all cells
 
 ## Notes
 
